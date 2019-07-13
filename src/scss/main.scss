@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600&display=swap&subset=latin-ext');
 
 
 html {
@@ -53,19 +54,23 @@ body {
 .header__title {
   color: rgb(36, 22, 87);
   font-size: 45px;
+  font-family: "Comfotaa";
 }
 
 .about__header {
   color: #2541B2;
-  font-size: 30px;
+  font-size: 32px;
+  font-family: "Comfotaa";
+
 }
 
 .diary {
   &__header {
     grid-area: header;
     color: #2541B2;
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
+    font-family: "Comfotaa";
   }
   &__heading {
     color: #2541B2;
@@ -122,11 +127,12 @@ body {
 
 .footer {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   margin: 20px auto;
-  text-align: justify;
+  text-align: center;
 &__top {
   font-size: 18px;
+  font-weight: bold;
   position: fixed;
   bottom: 10px;
   right: 15px;
