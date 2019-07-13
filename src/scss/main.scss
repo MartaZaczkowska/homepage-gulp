@@ -39,8 +39,19 @@ body {
   }
 }
 
+.site-header {
+  box-sizing: border-box;
+  left: 0;
+  padding: 16px;
+  position: fixed;
+  background: #2541B2;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 .header__title {
-  color: #DE3C4B;
+  color: rgb(36, 22, 87);
   font-size: 45px;
 }
 
@@ -93,6 +104,7 @@ body {
   }
   &__link {
     font-size: 20px;
+    color: rgb(110, 240, 117);
   }
   &__switcher {
     @media (max-width: 640px) {
