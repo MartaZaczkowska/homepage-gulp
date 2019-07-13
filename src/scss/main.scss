@@ -10,7 +10,117 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
-  color: $yellow;
-  background: $violet;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  background: rgb(5, 240, 241);
+  background: linear-gradient(128deg, rgba(5, 240, 241, 0.9864320728291317) 12%, rgba(241, 255, 2, 1) 94%);
+  background-attachment: fixed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding-top: 50px;
+  @media (min-width: 641px) {
+  max-width: 900px;
+  }
+}
+
+.header__title {
+  color: #DE3C4B;
+  font-size: 45px;
+}
+
+.about__header {
+  color: #2541B2;
+  font-size: 30px;
+}
+
+.diary {
+  &__header {
+    grid-area: header;
+    color: #2541B2;
+    font-size: 30px;
+    text-align: center;
+  }
+  &__heading {
+    color: #2541B2;
+    font-size: 22px;
+  }
+  &__paragraph {
+    font-size: 16px;
+  }
+}
+
+.navigation {
+  &__item {
+    display: block;
+    margin: 0 16px;
+    @media (max-width: 640px) {
+      .navigation__item {
+          margin: 16px;
+      }
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    @media (max-width: 640px) {
+      .navigation__list {
+          flex-direction: column;
+          display: none;
+        }
+      }
+    &--visible {
+      @media (max-width: 640px) {
+       display: flex; 
+      }
+    }
+  }
+  &__link {
+    font-size: 20px;
+  }
+  &__switcher {
+    @media (max-width: 640px) {
+          border: none;
+          background: none;
+          font-weight: bold;
+          font-size: 25px;
+          color:darkblue;
+    }
+    @media (min-width: 641px) {
+      display: none;
+      }
+    }
+  }
+
+.footer {
+  width: 100%;
+  font-size: 12px;
+  margin: 20px auto;
+  text-align: justify;
+&__top {
+  font-size: 18px;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  color: #2541B2;
+  text-decoration: none;
+}
 }
