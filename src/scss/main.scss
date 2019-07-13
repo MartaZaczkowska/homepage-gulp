@@ -82,12 +82,10 @@ body {
     align-content: center;
     justify-content: center;
     @media (max-width: 640px) {
-      .navigation__list {
-          flex-direction: column;
-          display: none;
+      flex-direction: column;
+      display: none;
         }
-      }
-    &--visible {
+      &--visible {
       @media (max-width: 640px) {
        display: flex; 
       }
