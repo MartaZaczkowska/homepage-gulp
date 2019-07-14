@@ -15,8 +15,8 @@ html {
 body {
   color: black;
   font-family: 'Lato', sans-serif;
-  background: rgb(5, 240, 241);
-  background: linear-gradient(128deg, rgba(5, 240, 241, 0.9864320728291317) 12%, rgba(241, 255, 2, 1) 94%);
+  background: rgb(251,164,63);
+  background: radial-gradient(circle, rgba(251,164,63,1) 0%, rgba(231,16,60,1) 100%);
   background-attachment: fixed;
 }
 
@@ -109,7 +109,7 @@ body {
   }
   &__link {
     font-size: 20px;
-    color: rgb(110, 240, 117);
+    color: rgb(238, 204, 14);
   }
   &__switcher {
     @media (max-width: 640px) {
